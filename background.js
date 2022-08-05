@@ -5,7 +5,7 @@ chrome.runtime.onMessage.addListener(
         console.log(url);
         console.log(html);
         sendResponse({farewell: 'Got the URL and Source Code, thanks!!'});
-        chrome.runtime.sendNativeMessage('ae.gits.mohre.automation',
+        chrome.runtime.sendNativeMessage('host.key',
         { "create_file": true, "url": url, "html": html }, function(response){
             console.log(response);
         });
